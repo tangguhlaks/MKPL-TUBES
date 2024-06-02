@@ -24,4 +24,25 @@ public class Calculator {
         }
         return a / b;
     }
+
+    public double divide1(double a, double b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("Division by zero is not allowed.");
+        }
+        return a / b;
+    }
+
+    public double divide2(double a, double b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("Division by zero is not allowed.");
+        }
+        return a / b;
+    }
+
+    public double divide3(double a, double b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("Division by zero is not allowed.");
+        }
+        return a / b;
+    }
 }
