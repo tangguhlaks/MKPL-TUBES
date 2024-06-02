@@ -1,19 +1,30 @@
 package org.example;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import org.example.code.Calculator;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Calculator calculator = new Calculator();
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        double a = 10.0;
+        double b = 5.0;
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        double result;
+
+        // Memanggil method add
+        result = calculator.add(a, b);
+        System.out.println("Hasil penjumlahan " + a + " + " + b + " = " + result);
+
+        // Memanggil method subtract
+        result = calculator.subtract(a, b);
+        System.out.println("Hasil pengurangan " + a + " - " + b + " = " + result);
+
+        // Memanggil method multiply
+        result = calculator.multiply(a, b);
+        System.out.println("Hasil perkalian " + a + " * " + b + " = " + result);
+
+        // Memanggil method divide
+        result = calculator.divide(a, b);
+        System.out.println("Hasil pembagian " + a + " / " + b + " = " + result);
     }
 }
