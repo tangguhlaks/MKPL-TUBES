@@ -48,4 +48,25 @@ public class CalculatorTest {
             calculator.divide(10, 0);
         });
     }
+
+    @Test
+    public void testDivide1() {
+        assertEquals(2, calculator.divide1(10, 5), 0);
+        assertEquals(-1, calculator.divide1(-2, 2), 0);
+        assertEquals(0.5, calculator.divide1(-1, -2), 0);
+    }
+
+    @Test
+    public void testDivide2() {
+        assertEquals(2, calculator.divide2(10, 5), 0);
+        assertEquals(-1, calculator.divide2(-2, 2), 0);
+        assertEquals(0.5, calculator.divide2(-1, -2), 0);
+    }
+
+    @Test
+    public void testDivide3() {
+        assertEquals(2, calculator.divide3(10, 5), 0);
+        assertEquals(-1, calculator.divide3(-2, 2), 0);
+        assertEquals(0.5, calculator.divide3(-1, -2), 0);
+    }
 }
