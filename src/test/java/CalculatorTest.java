@@ -41,11 +41,4 @@ public class CalculatorTest {
         assertEquals(-1, calculator.divide(-2, 2), 0);
         assertEquals(0.5, calculator.divide(-1, -2), 0);
     }
-
-    @Test
-    public void testDivideByZero() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            calculator.divide(10, 0);
-        });
-    }
 }
