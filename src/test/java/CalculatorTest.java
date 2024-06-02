@@ -14,9 +14,9 @@ public class CalculatorTest {
 
     @Test
     public void testAdd() {
-        assertEquals("10 + 5 should equal 15", 15, calculator.add(10, 5), 0);
-        assertEquals("-2 + 2 should equal 0", 0, calculator.add(-2, 2), 0);
-        assertEquals("-1 + -2 should equal -3", -3, calculator.add(-1, -2), 0);
+        assertEquals(10, calculator.add(5, 5), 0);
+        assertEquals(0, calculator.add(-2, 2), 0);
+        assertEquals(-3, calculator.add(-1, -2), 0);
     }
 
     @Test
